@@ -1,26 +1,22 @@
 {
-  "name": "ibar-auth-sdk",
-  "version": "1.5.1",
+  "name": "ibar-profile-sdk",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest --watch"
   },
   "dependencies": {
-    "crypto-js": "^4.0.0",
     "ibar-sdk": "^1.4.0"
-  },
-  "devDependencies": {
-    "aws-sdk": "^2.714.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ibarcontato/ibar-auth-sdk.git"
+    "url": "git+https://github.com/ibarcontato/ibar-profile-sdk.git"
   },
   "author": "Rodrigo Muniz",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ibarcontato/ibar-auth-sdk/issues"
+    "url": "https://github.com/ibarcontato/ibar-profile-sdk/issues"
   },
-  "homepage": "https://github.com/ibarcontato/ibar-auth-sdk#readme"
+  "homepage": "https://github.com/ibarcontato/ibar-profile-sdk#readme"
 }

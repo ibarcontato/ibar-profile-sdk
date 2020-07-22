@@ -1,6 +1,6 @@
-const isPathInAllowedPaths = require('./is-path-in-allowed-paths');
+const isPathIntoAllowedPaths = require('./is-path-into-allowed-paths');
 
-describe('\n function isPathInAllowedPaths(allowedPaths, path)', () => {
+describe('\n function isPathIntoAllowedPaths(allowedPaths, path)', () => {
   test('should return true when path is in allowedPaths', () => {
     const allowedPaths = ['GET/existingPath'];
     const path = 'GET/existingPath';
@@ -8,7 +8,7 @@ describe('\n function isPathInAllowedPaths(allowedPaths, path)', () => {
     const expected = true;
 
     try {
-      const received = isPathInAllowedPaths(allowedPaths, path);
+      const received = isPathIntoAllowedPaths(allowedPaths, path);
       expect(received).toEqual(expected);
     } catch (received) {
       fail();
@@ -22,7 +22,7 @@ describe('\n function isPathInAllowedPaths(allowedPaths, path)', () => {
     const expected = false;
 
     try {
-      const received = isPathInAllowedPaths(allowedPaths, path);
+      const received = isPathIntoAllowedPaths(allowedPaths, path);
       expect(received).toEqual(expected);
     } catch (received) {
       fail();
@@ -41,7 +41,7 @@ describe('\n function isPathInAllowedPaths(allowedPaths, path)', () => {
       });
 
       try {
-        const received = isPathInAllowedPaths(allowedPaths, path);
+        const received = isPathIntoAllowedPaths(allowedPaths, path);
         fail();
       } catch (received) {
         expect(JSON.parse(received)).toEqual(JSON.parse(expected));
@@ -61,7 +61,7 @@ describe('\n function isPathInAllowedPaths(allowedPaths, path)', () => {
       });
 
       try {
-        const received = isPathInAllowedPaths(allowedPaths, path);
+        const received = isPathIntoAllowedPaths(allowedPaths, path);
         fail();
       } catch (received) {
         expect(JSON.parse(received)).toEqual(JSON.parse(expected));
