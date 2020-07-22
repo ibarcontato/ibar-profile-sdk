@@ -8,7 +8,17 @@ exports.database = {
       return Promise.resolve({ statusCode: 200 });
     };
 
-    return { put }
+    const scan = (dbParams) => {
+      return Promise.resolve({
+        statusCode: 200,
+        items: [
+          { profiles: [{ name: 'estabAdmin' }], id: 'userId1' },
+          { id: 'userId2' }
+        ]
+      });
+    };
+
+    return { put, scan }
   }
 }
 
