@@ -6,7 +6,7 @@ exports.database = {
         return Promise.reject(JSON.stringify({ errorMessage: 'UPDATE_ERROR_MESSAGE', statusCode: 400 }));
 
       return Promise.resolve({ statusCode: 200 });
-    };
+    }; 
 
     const scan = (dbParams) => {
       return Promise.resolve({
