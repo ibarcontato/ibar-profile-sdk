@@ -8,7 +8,7 @@ module.exports = async function updateEstabWorkers(estabs, workers, docClient, c
   for (let estab of estabs) {
     const putReturn = await dbGateway(docClient, 'Estabs').put({
       updateObject: { workers: workers },
-      keys: { id: estab.id },
+      keys: { id: estab.id, hashId: estab.hashId },
       changedBy: changedBy
     }).catch(err => err);
 
